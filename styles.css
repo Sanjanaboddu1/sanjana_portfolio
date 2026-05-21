@@ -774,6 +774,8 @@ footer p {
     .cta-group {
         justify-content: center;
         flex-direction: column;
+        width: 100%;
+        gap: 15px;
     }
     
     .about-grid, .two-col-layout, .awards-grid {
@@ -788,5 +790,64 @@ footer p {
     
     .floating-action-btn {
         bottom: 100px; /* Above the dock */
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        padding: 60px 5%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .massive-title {
+        font-size: 3rem;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 20px 10px;
+    }
+
+    .contact-card {
+        padding: 40px 20px;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .floating-dock {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .dock-item {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .dock-tooltip {
+        display: none !important;
+    }
+    
+    .timeline {
+        padding-left: 20px;
+    }
+    
+    .timeline-dot {
+        left: -26px;
     }
 }
