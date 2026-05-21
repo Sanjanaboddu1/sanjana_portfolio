@@ -115,3 +115,24 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeEffect, 1000);
     }
 });
+
+// Active state for navigation dock
+const navItems = document.querySelectorAll('.dock-item');
+const sections = document.querySelectorAll('section');
+
+const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === `#${entry.target.id}`) {
+                    item.classList.add('active');
+                }
+            });
+        }
+    });
+}, { threshold: 0.5 });
+
+sections.forEach(section => {
+    navObserver.observe(section);
+});

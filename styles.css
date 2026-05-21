@@ -15,7 +15,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: none; /* Custom cursor */
+}
+
+@media (pointer: fine) {
+    * { cursor: none; }
+}
+
+@media (pointer: coarse) {
+    .cursor-dot, .cursor-outline { display: none !important; }
 }
 
 html {
@@ -661,10 +668,61 @@ a.award-card:hover {
     margin-bottom: 40px;
 }
 
-.email-btn {
-    font-size: 1.2rem;
-    padding: 20px 40px;
+/* Dock Active State */
+.dock-item.active {
+    color: var(--bg-color);
+    background: var(--text-main);
+    transform: translateY(-5px);
+}
+
+/* Typing Effect */
+.typing-cursor {
+    animation: blink 1s step-end infinite;
+    color: var(--secondary-color);
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--card-border);
+    color: var(--text-main);
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Outfit', sans-serif;
 }
 
 .social-links {
