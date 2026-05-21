@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjana Boddu | AI/ML & CS Portfolio</title>
+    <meta name="description" content="Portfolio of Sanjana Boddu, Computer Science undergraduate and AI/ML Enthusiast.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="floating-dock">
+        <a href="#home" class="dock-item" aria-label="Home"><i class="ph ph-house"></i><span class="dock-tooltip">Home</span></a>
+        <a href="#about" class="dock-item" aria-label="About"><i class="ph ph-user"></i><span class="dock-tooltip">About</span></a>
+        <a href="#projects" class="dock-item" aria-label="Projects"><i class="ph ph-folder"></i><span class="dock-tooltip">Projects</span></a>
+        <a href="#education" class="dock-item" aria-label="Education"><i class="ph ph-graduation-cap"></i><span class="dock-tooltip">Education</span></a>
+        <a href="#achievements" class="dock-item" aria-label="Achievements"><i class="ph ph-trophy"></i><span class="dock-tooltip">Achievements</span></a>
+        <a href="#contact" class="dock-item" aria-label="Contact"><i class="ph ph-envelope-simple"></i><span class="dock-tooltip">Contact</span></a>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content text-center">
+                <p class="greeting minimalist-greeting">Sanjana Boddu</p>
+                <h1 class="name massive-title">Software <br><span class="gradient-text">& AI/ML</span> Engineer.</h1>
+                <p class="tagline minimalist-tagline">Transforming complex data into intelligent, scalable systems.</p>
+                <div class="cta-group justify-center">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Let's Connect</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Hello! I'm an aspiring software engineer and AI enthusiast currently pursuing my Computer Science degree at B.V.Raju Institute of Technology. I've always been fascinated by how data can be transformed into intelligent systems that solve real-world challenges.</p>
+                    <p>My academic journey is driven by a deep curiosity for machine learning, computer vision, and building efficient algorithms. I love bridging the gap between theoretical concepts and practical applications, whether that means designing a deep learning model for image classification or developing an interactive software tool.</p>
+                    <p>As a student, I'm constantly learning and expanding my technical toolkit. I thrive in collaborative environments and am always looking for opportunities to contribute to innovative projects, participate in hackathons, and connect with fellow tech enthusiasts.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-num">8.9</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">3+</span>
+                        <span class="stat-label">Core Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">1st</span>
+                        <span class="stat-label">Prize in R&D Showcase</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">1</span>
+                        <span class="stat-label">Publication</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-tech-stack" style="margin-top: 50px;">
+                <h3 style="margin-bottom: 20px; font-size: 1.5rem; color: var(--text-main);">Tech Stack</h3>
+                <div class="tags" style="gap: 15px;">
+                    <span style="font-size: 1rem; padding: 10px 20px; border-radius: 30px;">Python</span>
+                    <span style="font-size: 1rem; padding: 10px 20px; border-radius: 30px;">Java</span>
+                    <span style="font-size: 1rem; padding: 10px 20px; border-radius: 30px;">C</span>
+                    <span style="font-size: 1rem; padding: 10px 20px; border-radius: 30px;">OpenCV</span>
+                    <span style="font-size: 1rem; padding: 10px 20px; border-radius: 30px;">Scikit-learn</span>
+                    <span style="font-size: 1rem; padding: 10px 20px; border-radius: 30px;">TensorFlow/Keras</span>
+                    <span style="font-size: 1rem; padding: 10px 20px; border-radius: 30px;">CNNs</span>
+                    <span style="font-size: 1rem; padding: 10px 20px; border-radius: 30px;">YOLOv8</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="coding-profiles" class="section">
+            <h2 class="section-title"><span class="gradient-text">Coding Profiles</span></h2>
+            <div class="profiles-grid">
+                <a href="https://leetcode.com/u/SanjanaBoddu/" class="profile-card glass-card" target="_blank" rel="noopener noreferrer">
+                    <div class="profile-icon">👨‍💻</div>
+                    <h3>LeetCode</h3>
+                    <p class="profile-stat">200+ <span class="stat-desc">Problems Solved</span></p>
+                </a>
+                <a href="https://www.hackerrank.com/profile/23211a0539" class="profile-card glass-card" target="_blank" rel="noopener noreferrer">
+                    <div class="profile-icon">💻</div>
+                    <h3>HackerRank</h3>
+                    <p class="profile-stat">5★ <span class="stat-desc">Problem Solving</span></p>
+                </a>
+                <a href="https://github.com/Sanjanaboddu1" class="profile-card glass-card" target="_blank" rel="noopener noreferrer">
+                    <div class="profile-icon">📁</div>
+                    <h3>GitHub</h3>
+                    <p class="profile-stat">15+ <span class="stat-desc">Repositories</span></p>
+                </a>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section-title"><span class="gradient-text">Selected Works</span></h2>
+            <div class="project-grid">
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <span class="project-year">2025</span>
+                            <h3>Autonomous Drone Navigation</h3>
+                            <p class="project-subtitle">Disaster Response Using Computer Vision</p>
+                        </div>
+                        <p class="project-desc">Built end-to-end modules for motion detection, human detection, and heatmap visualization using CNN models and OpenCV to guide drone navigation in emergency scenarios.</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>OpenCV</span><span>YOLOv8</span><span>CNN</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sanjanaboddu1/smart_drone_surveillance" class="project-link github-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <span class="project-year">2024</span>
+                            <h3>Smart Botanical Classifier</h3>
+                            <p class="project-subtitle">Deep Learning for Leaf Recognition</p>
+                        </div>
+                        <p class="project-desc">Preprocessed leaf image datasets and developed a deep learning classification model utilizing MobileNetV2 and transfer learning techniques for accurate plant species recognition.</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>TensorFlow/Keras</span><span>MobileNetV2</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sanjanaboddu1/Smart_Botanical_Classifier" class="project-link github-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <span class="project-year">2024</span>
+                            <h3>Crop Yield Prediction</h3>
+                            <p class="project-subtitle">Machine Learning Model</p>
+                        </div>
+                        <p class="project-desc">Engineered a machine learning pipeline to forecast crop yields based on soil and environmental parameters, evaluated using MSE and R² metrics.</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Random Forest</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Sanjanaboddu1/crop_yield_prediction" class="project-link github-link" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="two-col-layout">
+                <div>
+                    <h2 class="section-title"><span class="gradient-text">Education</span></h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>B.V.Raju Institute of Technology</h3>
+                                <span class="timeline-date">2023 - 2027</span>
+                                <p>Bachelor of Technology in Computer Science and Engineering</p>
+                                <span class="badge">GPA: 8.9</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Excellencia Junior College</h3>
+                                <span class="timeline-date">2021 - 2023</span>
+                                <p>Intermediate - MPC</p>
+                                <span class="badge">Percentage: 95.9%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="section-title"><span class="gradient-text">Certifications</span></h2>
+                    <ul class="cert-list">
+                        <li>
+                            <a href="https://drive.google.com/file/d/1fEGoYEj__Sf_6YEeVFNedt_3ZtOEZ5Xi/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-link">
+                                <span class="cert-name">Google AI Essentials Specialization</span>
+                                <span class="cert-issuer">Google, May 2026</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1GNe82M4My9XlPBeqKS87lzk1gCZWRZfP/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-link">
+                                <span class="cert-name">AI for Beginners</span>
+                                <span class="cert-issuer">HP Life, HP Foundation, 2025</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1zhPlx0N_AKC8_GWK-k6FNyNSFb12VpVL/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-link">
+                                <span class="cert-name">Complete Python Bootcamp From Zero to Hero</span>
+                                <span class="cert-issuer">Udemy, 2024</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1dvkjuoQTLcHQuPorPALNK7JdbMalalB5/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-link">
+                                <span class="cert-name">Introduction to Packet Tracer</span>
+                                <span class="cert-issuer">Cisco, 2024</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="section">
+            <h2 class="section-title"><span class="gradient-text">Achievements & Publications</span></h2>
+            
+            <div class="awards-grid">
+                <a href="https://drive.google.com/file/d/1wlVCxmiRTQluopwz8W_N_LktUqmi7Mr2/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="award-card glass-card" style="text-decoration: none; color: inherit; cursor: pointer;">
+                    <div class="award-icon">🏆</div>
+                    <h3>1st Prize, R&D Showcase 2025</h3>
+                    <p>Secured first prize for the project "Autonomous Drone Navigation for Disaster Response using Computer Vision". Recognized for innovation and real-world applicability.</p>
+                </a>
+
+                <a href="https://ieeexplore.ieee.org/document/11089883" target="_blank" rel="noopener noreferrer" class="award-card glass-card" style="text-decoration: none; color: inherit; cursor: pointer;">
+                    <div class="award-icon">📝</div>
+                    <h3>IEEE Publication (6th ICIRCA 2025)</h3>
+                    <p>Published: "YOLO-Powered Deep Learning Framework for Smart Drone Surveillance in Emergency Rescue Operation".<br><br><span class="doi">DOI: 10.1109/ICIRCA65293.2025.11089883</span></p>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title"><span class="gradient-text">Get In Touch</span></h2>
+            <div class="contact-card glass-card">
+                <p class="contact-desc">I'm currently looking for internship and project opportunities. Whether you have a question, a project idea, or just want to say hi, my inbox is always open!</p>
+                <a href="mailto:sanjananetha369@gmail.com" class="btn primary-btn email-btn">Say Hello</a>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Sanjanaboddu1" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sanjana-boddu-b4a775309/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="tel:8008080723">800-808-0723</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed & Built by Sanjana Boddu</p>
+        <p class="footer-sub">Inspired by modern web experiences.</p>
+    </footer>
+
+    <a href="#contact" class="floating-action-btn" aria-label="Contact Me">
+        <i class="ph ph-chat-teardrop-dots"></i>
+    </a>
+
+</body>
+</html>
